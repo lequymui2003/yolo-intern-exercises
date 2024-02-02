@@ -1,0 +1,53 @@
+bài 16:
+  ((1<3) && (2<4) || (11<25 || 16> 21)) && true
+= (     true      ||       true      )  && true
+=                true                   && true
+=                            true
+
+bài 17 :
+  ((5<6) || (4<2)) && (21<20 && 13 < 11) && false
+= (     true       &&       true       ) && false
+=                true                    && false
+=                            false
+
+bài 18 :
+  ((true && false) || (false && false)) && (false || true)
+= (     false      ||       true      ) &&       true
+=                 true                  &&       true
+=                            true
+
+bài 19 :
+  ((true || false) && (true || false)) || (true && false)
+= (     true       &&      true)       ||     false
+=                 true                 ||     false
+=                            true
+
+bài 20 :
+  !(!(true || false) && (!true && false)) && (true && !false)
+= !(     !true       &&       true      ) &&      true
+= !                 false                 &&      true
+=                            true
+bài 21 :
+- Sự khác biệt giữa i++ và i-- là:
+i++ là sẽ trả về giá trị ban đầu trước rồi mới tăng lên 1 đơn vị.
+++i là sẽ trả về giá trị mới đã được tăng lên 1 đơn vị.
+bài 22 :
+- Đoạn code sau có vấn đề gì:
+for(var i=0; i<10; i--) { 
+    print(i); 
+}
+- Đoạn code trên có vấn đề ở var i = 0 var nó không phải là một kiểu định dạng dữ liệu của biến như là int, float,char,double,....
+- Trong c để in ra màn hình dùng printf() thay vì cho print().
+- Thay vì là i-- nên đổi thành i++ bởi vì nếu để là i-- và nhập bất kỳ giá trị nào của i, điều kiện i < 10 luôn đúng và vòng lặp sẽ vô hạn
+bài 22 :
+Đoạn code sau trả về giá trị bao nhiêu (% là toán tử lấy số dư, ví dụ 3%2 = 1)
+int total = 0;
+for(int i=0; i<11; i++) {
+   if(i %2 == 0) {
+       total += 1;
+   } else {
+       total += 2;
+   }
+}
+return total;
+- Đoạn code trên có giá trị là 16
