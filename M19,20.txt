@@ -1,0 +1,21 @@
+câu 19 :
+Đoạn code sau trả về giá trị bao nhiêu (% là toán tử lấy số dư, ví dụ 3%2 = 1, 5%3 = 2)
+int total = 0;
+for(int i=1; i<5; i++) {
+   if(i %2 == 0) {
+       total = total + 1;
+   } else {
+       total = total * 2;
+   }
+}
+return total;
+
+=> total = 6;
+
+câu 20 :
+
+Sự khác biệt giữa Stack và Queue :
+Stack là một cấu trúc trừu tượng, các đối tượng trong stack làm việc theo 1 cơ chế là LIFO(LAST IN FIRST OUT)- đối tượng vào sau thì ra trước.
+VD: xếp sách
+Queue là một cấu trúc trừu tượng, các đối tượng trong stack làm việc theo 1 cơ chế là FIFO(FIRST IN FIRST OUT)- đối tượng vào trước thì ra trước.
+VD : xếp hàng
